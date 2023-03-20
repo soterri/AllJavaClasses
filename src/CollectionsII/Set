@@ -1,0 +1,14 @@
+Set Collection:
+
+Set Collection does not allow for duplicate elements.
+
+Classes that implement the Set interface is:
+HsshSet - order of the elements is not preserved
+LinkedHashSet - order is preserved
+TreeSet - ascending order (Abc order)
+
+Set does not have methods to retrieve elements from. 
+so we retrieve elements using ITERATOR!
+
+
+

@@ -1,0 +1,8 @@
+To create a a variable we need:
+type
+name
+value
+
+int i = 19;
+declaring the variable - assigning the value
+

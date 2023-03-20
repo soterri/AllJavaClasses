@@ -1,0 +1,14 @@
+Variables and methods defined inside the user class are class members
+
+Methods:
+Built In: limited and we cannot modify
+
+User Defined: unlimited and modifiable
+
+We can't create a method inside another method even the main method.
+
+Methods:
+With PARAMETERS
+W/O parameters
+
+ 

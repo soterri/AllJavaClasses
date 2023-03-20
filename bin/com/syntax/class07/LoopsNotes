@@ -1,0 +1,31 @@
+Loops: to repeat same block of code
+
+Loops:
+while
+do while
+for
+advanced for loop/enhanced loop/for each loop
+
+WHILE LOOP SYNTAX
+1. initialize variable (should be outside of loop)
+2. while( test variable --> has to be true) {
+	code;
+	variable increment or decrement;
+	
+WHILE LOOP:
+1. initialize variable
+2. while condition
+3. code inside loop gets executed
+4. increment/decrement
+
+WHILE WE CHECK CONDITION FIRST THAN EXECUTE BLOCK OF CODE
+
+WHILE LOOP IS BEST CHOICE IF YOU DONT KNOW THE NUMBER OF ITERATIONS
+
+DO WHILE - EXECUTES BLOCK OF CODDE FIRST THAN CHECKS CONDITION
+EVEN IF CONDITION IS FALSE - IT WILL EXECUTE CODE AT LEAST ONCE
+
+	DO WHILE
+do while is similar to while loop
+code will execute while condition is true
+even if condition is false code will execute at least once

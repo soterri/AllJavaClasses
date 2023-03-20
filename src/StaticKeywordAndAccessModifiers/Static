@@ -1,0 +1,18 @@
+Static - variables defined inside the class but outside any method, constructor, or block
+
+Static is a keyword that can be used with variables, methods, and blocks
+
+non static members cannot be used with static methods
+
+4 types of access modifiers
+private
+default
+protected 
+public - making variables and methods accessible from anywhere throughout the entire project
+
+
+syntax for variables
+dataType variableName;
+
+Syntax for methods
+returnType methodName

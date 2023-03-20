@@ -1,0 +1,16 @@
+Switch - a alternative to an if else if
+
+executes 1 statement from multiple options - a control flow statement
+
+syntax:
+switch(variable) and a block of belonging to switch {
+
+case variableName;
+code;
+break; 
+
+} 
+
+works with int, short, byte, char, String
+
+relational(<, >, =, <=, =>)operators not valid nor is logical operators

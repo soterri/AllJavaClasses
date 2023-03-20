@@ -1,0 +1,29 @@
+Map - a collection of ENTRY objects using a key+value pair that is not apart of the Collection Framework although the concepts are based on the 
+collections framework. Map has its own methods to manipulate data with.
+
+Classes that implement the Map interface is
+HashMap - map in which order is not maintained
+
+LinkedHashMap -  of key objects is maintained
+
+TreeMap - map in which key objects will be stored in ascending order
+
+HashTable - synchronized and outdated.
+
+to store -- .PUT
+
+to retrieve -- .GET
+
+To retrieve all keys 
+.keySet(); - returns a set of all keys from the map(keys must be unique)
+
+To retrieve all values
+.values(); returns a collection of values (values can be duplicate and they are not ordered).
+
+
+to get an entry object  - we need to call the method entrySet(); --> a set of entry objects
+
+entry will have methods
+.getKey - returns key object
+.getValue - returns value object
+
