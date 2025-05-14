@@ -2,13 +2,13 @@ package InheritanceAndThisKW;
 
 public class Parent {
 	
-	public static String race = "Asian";
-	public String hairColor="Black";
-	public String eyeColor="Brown";
+	public static String race = "Southeast Asian";
+	public String hairColor ="black";
+	public String eyeColor="brown";
 	
-	public void sing() {
-		System.out.println("I can sing");
+	public void canCook() {
+		System.out.println("I can make cambodian and laotian food");
 	}
-	
 
 }
+

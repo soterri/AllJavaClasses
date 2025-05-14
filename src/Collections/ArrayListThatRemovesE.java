@@ -1,8 +1,8 @@
 package Collections;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Iterator;
+import java.util.List;
 
 public class ArrayListThatRemovesE {
 
@@ -20,16 +20,14 @@ public class ArrayListThatRemovesE {
 		list.add("Hello");
 		list.add("biznyeee");
 
-		Iterator<String> iterator = list.iterator();
 
-		while (iterator.hasNext()) {
-
-			if (iterator.next().endsWith("e")) {
-				iterator.remove();
+		Iterator<String> it = list.iterator();//Iterator - class //iterator() - a method
+		while(it.hasNext()) {
+			
+			if(it.next().endsWith("e")) {
+				it.remove();
 			}
 		}
 		System.out.println(list);
-
-	}
-
+		}
 }

@@ -1,7 +1,7 @@
 package ConstuctorClass;
 
 public class ConstructorDemo {
-
+	
 	ConstructorDemo() {
 		System.out.println("I'm a constructor");
 	}
@@ -39,5 +39,4 @@ public class ConstructorDemo {
 	void hello1() {
 		System.out.println("Hello Savannah! <3");
 	}
-
 }

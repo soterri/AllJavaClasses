@@ -27,12 +27,18 @@ public class Student {
 
 }
 class SyntaxStudent extends Student{
-	
+	@Override
 	public void study() {
 		System.out.println("syntax student studies");
 	}
+	@Override
 	protected void attendClasses() {
 		System.out.println("syntax student needs to attend classes");
-		
 	}
+	//@Override private does not participate in inheritance, only visible to the class 
+	//where its declared. two separate methods from class student and SyntaxStudent
+	private void doHomework() {
+		System.out.println("Student needs to do homework");
+	}
+	
 }

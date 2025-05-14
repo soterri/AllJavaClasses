@@ -21,7 +21,7 @@ class Monkey extends Animal1 {
 }
 
 // how can you check if youre overriding without the annotation?
-// by writing code to acheive runtime polymorphism - create an obj of child
+// by writing code to achieve runtime polymorphism - create an obj of child
 // class and give reference to parent class
 
 //cannot override static method

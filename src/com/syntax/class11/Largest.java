@@ -10,11 +10,12 @@ public class Largest {
 
 		// assume that our largest number is equal to 0
 		int largest = numbers[0];
+		
 
 		// now loop
 		for (int i = 0; i < numbers.length; i++) {
+			
 			// now comparing each element
-
 			if (numbers[i] > largest) {
 				largest = numbers[i];
 

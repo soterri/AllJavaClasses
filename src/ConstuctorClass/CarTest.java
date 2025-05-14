@@ -4,6 +4,7 @@ public class CarTest {
 	public static void main(String[] args) {
 
 		Car.make = "Toyota"; // initializing the variable
+		BetterCar.make="Lexus";
 
 //		Car car1 = new Car();
 //		car1.model = "Camry";
@@ -19,7 +20,9 @@ public class CarTest {
 //		car2.doors=4;
 //		car2.getDetails();
 		
-		Car betterCar = new Car("Highlander", "Gray", 400, 4);
+//		Car betterCar = new Car("Highlander", "Gray", 400, 4);
+//		betterCar.getDetails();
+		BetterCar betterCar = new BetterCar("Corolla", "White", 180, 5);
 		betterCar.getDetails();
 		
 		Car betterCar1 = new Car("Camry", "Black", 200, 4);

@@ -14,12 +14,23 @@ public class WhileExample {
 		boolean isRain;
 
 		do {
-			System.out.println("Is it raining?");
+			System.out.println("Raining?");
 			isRain = scan.nextBoolean();
 			System.out.println("Take umbrella");
-
 		} while (!isRain);
 		System.out.println("Go to the park");
+
 	}
 
 }
+
+//Scanner scan = new Scanner(System.in);
+//boolean isRain;
+//
+//do {
+//	System.out.println("Is it raining?");
+//	isRain = scan.nextBoolean();
+//	System.out.println("Take umbrella");
+//
+//} while (!isRain);
+//System.out.println("Go to the park");

@@ -1,0 +1,26 @@
+break and continue keyword can be used inside any loop
+mostly it will be used within if statement
+
+break vs continue
+
+break - exits the loop
+continue - skips current iteration
+
+FOR LOOP - best choice to use when you know the number of iterations
+
+WHILE/DO WHILE - best choice when you DO NOT know the number of iterations
+
+FOR LOOP SYNTAX:
+for(initialization/start point; condition/end point; increment/decrement)
+
+		code;
+	}
+	
+	NESTED LOOP
+	
+	-Placing one loop inside the body of another loop is called nesting.
+	-When we "nest" two loops, the outer loop takes control of the number of complete
+	repetitions of the inner loop
+	-While all types of loops may be nested, the most common one is FOR LOOP.
+	
+	

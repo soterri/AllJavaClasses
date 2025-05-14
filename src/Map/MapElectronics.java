@@ -1,3 +1,4 @@
+
 package Map;
 
 import java.util.Iterator;
@@ -19,14 +20,6 @@ public class MapElectronics {
 		System.out.println(map);
 
 		// to retrieve key - values using entry set
-//		Set<Entry<Integer, String>> set = map.entrySet();
-//		
-//		for(Entry<Integer, String> entry:set) {
-//			
-//			String ent=entry.getKey()+"*****"+entry.getValue();
-//			System.out.println(ent);
-//			
-//		}
 
 		Set<Entry<Integer, String>> set = map.entrySet();
 
@@ -35,25 +28,49 @@ public class MapElectronics {
 			String ent = entry.getKey() + " ---- " + entry.getValue();
 			System.out.println(ent);
 		}
+		
+		
+		
+		
 		System.out.println("ITERATOR");
-//		Iterator<Integer> electronicMap = map.keySet().iterator();
-//		
-//		while(electronicMap.hasNext()) {
-//			
-//			Integer itKey = electronicMap.next();
-//			String itValue = map.get(itKey);
-//			
-//			System.out.println(itKey+" --- "+itValue);
-//		}
-
 		Iterator<Integer> electronicMap = map.keySet().iterator();
-
-		while (electronicMap.hasNext()) {
-
+		while(electronicMap.hasNext()) {
+			
 			Integer itKey = electronicMap.next();
 			String itVal = map.get(itKey);
+			System.out.println(itKey+"--"+itVal);
+		}
 
-			System.out.println(itKey + " " + itVal);
+		System.out.println("------------------");
+		
+		Iterator<Entry<Integer, String>> entryIterator = map.entrySet().iterator();
+		while(entryIterator.hasNext()) {
+			Entry<Integer, String> singleEntry = entryIterator.next();
+			System.out.println(singleEntry.getKey()+"---"+singleEntry.getValue());
 		}
 	}
 }
+
+
+
+//Iterator<Integer> electronicMap = map.keySet().iterator();
+//
+//while(electronicMap.hasNext()) {
+//	
+//	Integer itKey = electronicMap.next();
+//	String itValue = map.get(itKey);
+//	
+//	System.out.println(itKey+" --- "+itValue);
+//}
+
+
+
+
+//Set<Entry<Integer, String>> set = map.entrySet();
+//
+//for(Entry<Integer, String> entry:set) {
+//	
+//	String ent=entry.getKey()+"*****"+entry.getValue();
+//	System.out.println(ent);
+//	
+//}

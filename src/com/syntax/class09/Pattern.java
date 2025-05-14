@@ -10,7 +10,7 @@ public class Pattern {
 		
 		for(int i=0; i<5; i++) { //rows
 			
-			for(int y=0; y<7; y++) { //cols
+			for(int y=0; y<5; y++) { //cols
 				System.out.print("*");
 			}
 			System.out.println();
@@ -28,3 +28,4 @@ public class Pattern {
 		
 	}
 }
+

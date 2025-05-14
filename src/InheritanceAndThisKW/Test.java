@@ -7,13 +7,13 @@ public class Test {
 		Child1 child = new Child1();
 		child.code();
 		System.out.println(child.hairColor);
-		child.sing();
+		child.canCook();
 		System.out.println(child.race);
 		System.out.println(child.eyeColor);
 		
-		System.out.println("------------------------7");
+		System.out.println("------------------------");
 		Parent parent = new Parent();
-		parent.sing();
+		parent.canCook();
 		System.out.println(parent.eyeColor);
 		System.out.println(parent.hairColor);
 		System.out.println(parent.race);

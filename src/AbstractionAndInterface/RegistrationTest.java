@@ -31,17 +31,16 @@ class RegistrationClass {
 	}
 
 	// setting username - void kw as return type
+	
 	public void setUsername(String userName) {
-		if (!userName.isEmpty()) {
-
-			if (userName.length() > 6) {
-
-			}
-		} else {
-			System.out.println("username should have more than 6 characters");
-		}
-
-		System.out.println("Username cannot be empty");
+	    if (userName.isEmpty()) {
+	        System.out.println("Username cannot be empty");
+	    } else if (userName.length() <= 6) {
+	        System.out.println("Username should have more than 6 characters");
+	    } else {
+	        // Set the username (you need to add the actual logic to store the username)
+	        System.out.println("Username is valid and set successfully");
+	    }
 	}
 
 	// getting username - returning something - change return type
@@ -79,7 +78,10 @@ class RegistrationClass {
 		public static void main(String[] args) {
 		
 		RegistrationClass obj = new RegistrationClass();
-		obj.getEmail();
+		obj.setUsername("Terri12345454545");
+		System.out.println(obj.getUsername());
+		obj.setEmail("Terri@gmail.com");
+		System.out.println(obj.getEmail());
 		
 	}
 }

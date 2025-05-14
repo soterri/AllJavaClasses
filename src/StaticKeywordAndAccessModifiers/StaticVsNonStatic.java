@@ -15,7 +15,7 @@ public class StaticVsNonStatic {
 	//static method
 	static void getInfo1() {
 		System.out.println("I am attending "+school);
-		
+		//sysout("my name is+name);// will get CE bc you CANNOT access NON static members within static methods
 	}
 	public static void main(String[] args) {
 		

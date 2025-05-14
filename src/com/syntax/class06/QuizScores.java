@@ -13,7 +13,7 @@ public class QuizScores {
 
 		Scanner scan;
 		int quiz, midTerm, finalScore, average; // variables of the same kind can be put into one line
-
+		
 		scan = new Scanner(System.in);
 		System.out.println("Please enter quiz score");
 		quiz = scan.nextInt();

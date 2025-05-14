@@ -1,0 +1,21 @@
+3 types of variables:
+local
+instance
+static
+
+LOCAL variables declared inside the class and inside the method.
+The scope of the local variable is only within that method.
+
+
+INSTANCE variables are declared inside the class but OUTSIDE of any method.
+When we create an instance of each class(object of the class) a copy of each instance
+variable will be given to each object (instance).
+
+STATIC
+- static variables defined inside the class but outside any method, constructor, or block.
+- cannot be local
+- create a single copy of static variable and share among all instances of the class
+- belongs to the class rather than the instance
+- when you want to have common properties that should be passed onto all the instances that are static
+- can be used with variables, methods, and blocks
+

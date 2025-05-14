@@ -6,7 +6,7 @@ public class Device {
 
 	String deviceType, name;
 
-	// initiailizing variable by constructor
+	// Initializing variable by constructor
 	public Device(String deviceType, String name) {
 		this.deviceType = deviceType;
 		this.name = name;

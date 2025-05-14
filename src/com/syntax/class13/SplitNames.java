@@ -24,7 +24,8 @@ public class SplitNames {
 		gender = scan.nextLine();
 
 		if (gender.equalsIgnoreCase("boy")) {
-			babyName = fatherName.substring(0, fatherName.length() / 2) + motherName.substring(motherName.length() / 2);
+//			babyName = fatherName.substring(0, fatherName.length() / 2) + motherName.substring(motherName.length() / 2);
+			babyName = fatherName.substring(0, fatherName.length()/ 2) + motherName.substring(motherName.length() /2);
 		} else if (gender.equalsIgnoreCase("girl")) {
 			babyName = motherName.substring(0, motherName.length() / 2) + fatherName.substring(fatherName.length() / 2);
 		} else {

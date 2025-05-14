@@ -16,7 +16,7 @@ public class WebDriverTest {
 		driver.open();
 		driver.refresh();
 		driver.open();
-		
+		//creating a object of child class and given reference to the parent class
 		WebDriver driver1 = new FireFoxDriver();
 		driver1.open();
 		driver1.refresh();

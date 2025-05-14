@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 public class CollectionsRecap {
@@ -47,6 +48,12 @@ public class CollectionsRecap {
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 			
+		}
+		
+		Iterator<Integer> it = arrayList.iterator();
+		
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
 		}
 		
 		

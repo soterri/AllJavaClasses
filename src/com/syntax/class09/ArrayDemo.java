@@ -18,7 +18,7 @@ public class ArrayDemo {
 		
 		System.out.println("I was born in "+array[3]);
 		System.out.println(array.length);
-		int arraySize = array.length;
+		int arraySize = array.length; //storing value inside variable
 		System.out.println(arraySize);
 		}
 	}

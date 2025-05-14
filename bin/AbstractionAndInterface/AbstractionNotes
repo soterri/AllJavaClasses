@@ -1,0 +1,70 @@
+4 Main Concepts in Object Oriented Programming
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+
+Abstraction is the process of hiding the implementation details and showing only functionality to the user.
+
+An abstract class in Java serves as a blueprint for other classes. It is used to define a common structure or behavior that can 
+be shared among multiple related classes while still allowing those classes to have their own specific implementations.
+
+Abstract class is a class that is defined with an abstract keyword and have implemented (methods with body) 
+and unimplemented (methods with no body) methods.
+
+
+
+In Java, Abstraction can be achieved in two days:
+Abstract Class - partial abstraction
+Interface - full abstraction
+
+abstract - keyword and non access modifier
+		   can be used with methods and classes	
+		   is a keyword that identifies something as incomplete
+
+final, static - non access modifiers
+
+We have to have a class to create an object
+
+you cannot directly create an object of a abstract class
+Phone phone = new Phone(); CE, can't instantiate bc its incompleted/has undefined methods
+		
+how to create the object of Phone type? create indirectly
+create an object of child class and give reference to parent class
+Phone phone = new iPhone();
+
+Why do we need abstract class?
+Usually, as a base class, as a parent, we specify one class the main functionality
+the actual implementation is being hidden and will be provided by the sub classes
+showing the general idea by unimplemented methods - refer to class phone for example
+the implementation is hidden, this implementation is provided by child class
+
+Abstract classes allow you to define a common base for a group of related classes. 
+They can include shared fields and methods (with or without implementations), 
+ensuring that all subclasses inherit this shared functionality.
+
+Can abstract be final, static, or private? NO!
+final - complete, non-modifiable, cannot override
+static - cant override
+private - does not participate in inheritance
+
+Abstract class can have instance methods and variables/non static methods/nonstatic variables
+
+Can abstract class have static and non static variables? yes as instance variables and static methods, can only be 
+accessed by static
+
+Can abstract class have constructors? yes, when we create instance variables, 
+the constructor is used to initialized the instance variables
+
+Abstract class can have:
+implemented
+unimplemented methods
+abstract methods - no static, no final, no private
+Constructors
+Instance and static variables
+
+Abstract class VS Concrete Class
+1. In concrete, all methods must be defined
+2. Cannot create an object of the Abstract class
+
+Create an object = Create an instance = instantiate the class

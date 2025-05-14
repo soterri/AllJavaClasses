@@ -1,0 +1,16 @@
+Array is a collection of similar types of data, holds values of the same type.
+holds multiple values
+Fixed in size so you can't increase the size of the array
+Stores values on the basis of index
+to store large amt of data
+benefits" code optimization, reduce redundancy
+
+if you put less elements, then you'll get the default value that java provides 
+which is 0 for int null for strings
+
+creating the array of integers int[]
+
+specifying size new int[3] storing the elements
+
+Array is a collection of data holding values of the same type, fixed in size so you cannot increase the size of the array
+storing values based on the index. The benefits of arrays are to reduce redundancy, code optimization.

@@ -9,16 +9,19 @@ public class Hello {
 
 	void sayHelloDifferentLanguage(String country) {
 		
-		switch(country) {
+		switch(country.toLowerCase()) {
 		
 		case "USA":
 			System.out.println("Hello");
 			break;
-		case "Cambodia":
+		case "cambodia":
 			System.out.println("Sok Sa Bai");
 			break;
 		case "Laos":
 			System.out.println("Sa bai dee");
+			break;
+		case "England":
+			System.out.println("Hello Murica");
 			break;
 		default:
 			System.out.println("IDK");
@@ -41,13 +44,15 @@ public class Hello {
 	public static void main(String[] args) {
 
 		Hello hello = new Hello();
-		hello.sayHello("Terri");
+		hello.sayHello("Terri"); //terri --> argument, value that we pass when we call a method
 		hello.sayHello("Sophy");
 		hello.sayHelloDifferentLanguage("Cambodia");
 		hello.sayHelloDifferentLanguage("Laos");
 		hello.sayHelloDifferentLanguage("Vietnam");
-		hello.sayNameAndAge("Terri", 33);
+		hello.sayNameAndAge("Terri", 34);
 		hello.isSnowing(true);
+		hello.sayHelloDifferentLanguage("England");
+		hello.sayHelloDifferentLanguage("CambodiA");
 		
 
 	}

@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class CarArrayList {
 	public static void main(String[] args) {
@@ -10,32 +11,37 @@ public class CarArrayList {
 		
 		ArrayList<String> cars = new ArrayList<>();
 		cars.add("Honda");
-		cars.add("Toyota");
-		cars.add("Acura");
 		cars.add("Tahoe");
+		cars.add("Benzy");
+		cars.add("Range Rover");
 		
-		System.out.println("Enhanced loop");
-		for(String listOfCars:cars) {
-			System.out.println(listOfCars);
-		}
-		System.out.println("for loop");
+		int lan=cars.size();
+		System.out.println(lan);
+		
+		System.out.println(cars.get(2));
+		
 		for(int i=0; i<cars.size(); i++) {
 			System.out.println(cars.get(i));
 		}
-		
-		System.out.println("---backwards---");
-		for(int j=cars.size()-1; j>0; j--) {
+		System.out.println("backwards");
+		for(int j=cars.size()-1; j>=0; j--) {
 			System.out.println(cars.get(j));
 		}
-		
 		System.out.println("Iterator");
 		java.util.Iterator<String> iterator = cars.iterator();
-		
+
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
-		
+		System.out.println("enhanced loop");
+		for(String caros:cars) {
+			System.out.println(caros);
+		}
 		
 	}
-
 }
+
+
+
+
+

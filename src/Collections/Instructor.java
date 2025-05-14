@@ -1,16 +1,16 @@
 package Collections;
 
 public class Instructor {
-	
+
 	String name;
 	String lastName;
-	
-	public Instructor(String name, String lastName) {
-		this.name=name;
-		this.lastName=lastName;
+
+	Instructor(String name, String lastName) {
+		this.name = name;//initializing instance variables
+		this.lastName = lastName;
 	}
 
 	public void display() {
-		System.out.println("Instructors full name is "+name+" "+lastName);
+		System.out.println("Instructors full name is " + name + " " + lastName);
 	}
 }

@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.LinkedList;
+import java.util.Iterator;
 
 public class LinkedListDemo {
 
@@ -10,6 +11,7 @@ public class LinkedListDemo {
 		LinkedList<String> linkedList = new LinkedList<>();
 		linkedList.add("Hello");
 		linkedList.add("Bye");
+		linkedList.add(2, "How are you");//replaces the element in that index
 		
 		System.out.println(linkedList.size());
 		
@@ -26,6 +28,14 @@ public class LinkedListDemo {
 		
 		for(int i=0; i<linkedList.size(); i++) {
 			System.out.println(linkedList.get(i));
+		}
+		for(String lList:linkedList) {
+			System.out.println(lList);
+		}
+		System.out.println("-------------");
+		Iterator<String> it = linkedList.iterator();
+		while(it.hasNext()) {//checking if there is a next element
+			System.out.println(it.next());
 		}
 	}
 }

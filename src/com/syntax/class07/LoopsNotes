@@ -1,3 +1,7 @@
+int a =10;
+a=a+1; - assignment
+a+=1; shorthand assignment
+
 Loops: to repeat same block of code
 
 Loops:
@@ -14,18 +18,29 @@ WHILE LOOP SYNTAX
 	
 WHILE LOOP:
 1. initialize variable
-2. while condition
+2. while (test variable --> true) THEN
 3. code inside loop gets executed
 4. increment/decrement
+code will be looping until condition becomes false
 
-WHILE WE CHECK CONDITION FIRST THAN EXECUTE BLOCK OF CODE
+WHILE - WE CHECK CONDITION FIRST THAN EXECUTE BLOCK OF CODE
 
-WHILE LOOP IS BEST CHOICE IF YOU DONT KNOW THE NUMBER OF ITERATIONS
-
-DO WHILE - EXECUTES BLOCK OF CODDE FIRST THAN CHECKS CONDITION
+DO WHILE - EXECUTES BLOCK OF CODE FIRST THAN CHECKS CONDITION
 EVEN IF CONDITION IS FALSE - IT WILL EXECUTE CODE AT LEAST ONCE
 
 	DO WHILE
 do while is similar to while loop
 code will execute while condition is true
 even if condition is false code will execute at least once
+
+
+DO WHILE
+
+int num1=10 // 	1. initialize variable
+
+do{
+ Sysout("Bye") 1. execute code 
+ 
+ num1++ //increment
+ 
+ }while(num1<=7) // checks condition

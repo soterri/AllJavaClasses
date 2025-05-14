@@ -5,9 +5,9 @@ public class StringMultiDArray {
 
 		String[][] names = {
 
-				{ "Chanthavong", "Sotheary", "Angelina", "Chanthavong Jr", "Sophy", "Savannah" },
-				{ "John", "Terri", "Ange", "Max", "Soph", "Sav" },
-				{ "Mom", "Dad", "Daughter1", "Son", "Daughter2", "Daughter3" },
+				{ "Chanthavong", "Sotheary", "Angelina", "Chanthavong Jr", "Sophy", "Savannah", "Cameron" },
+				{ "John", "Terri", "Ange", "Max", "Soph", "Sav", "Cam"},
+				{ "Mom", "Dad", "Daughter1", "Son", "Daughter2", "Daughter3", "Son2" },
 				
 		};
 
@@ -19,12 +19,13 @@ public class StringMultiDArray {
 		int cols = names[0].length;
 		System.out.println(cols);
 		
-		for(int row = 0; row<names.length; row++) {
+		for(int row = 0; row<names.length; row++) { //.num.length is accessing the property of the length for our array will gives us # of rows/arrays
 			
-			for(int col=0; col<names[row].length; col++) {
+			for(int col=0; col<names[row].length; col++) { //inner loop thru cols
 				
-				System.out.println(names[row][col]);
+				System.out.print(names[row][col]+" ");
 			}
+			System.out.println();
 		}
 
 	}

@@ -6,8 +6,8 @@ public class ScrumTeam extends Employee {
 	String ceremonies;
 
 	void attendScrumMeetings() {
-		System.out.println("I attend " + ceremonies);
+		System.out.println("I attend " +ceremonies);
 
 	}
-	
+
 }

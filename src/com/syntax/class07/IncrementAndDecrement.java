@@ -21,6 +21,8 @@ public class IncrementAndDecrement {
 		c++;
 		System.out.println(c);
 		
+		//increment and decrement operators can only be used with variables
+		
 	}
 
 }

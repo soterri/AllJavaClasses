@@ -1,0 +1,16 @@
+Encapsulation:
+In Java, a mechanism for wrapping the data(variables) and code acting
+on the data(methods) together as a single unit.
+
+create private variables and only through public method you can access these private variables
+
+Best example of Encapsulation is a class.
+To create a tightly encapsulated class we need:
+1 to create private data members(variables)
+2. create public methods to get access to those variables(getters and setters)
+
+How can we achieve data hiding?
+by making the data private, to access the data, we have to use
+public methods, and through public methods, you can get access to variables
+
+ 

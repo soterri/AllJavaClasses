@@ -21,8 +21,10 @@ public class Iterator {
 			System.out.println(array);
 		}
 		//USING ITERATOR
-//		Iterator<String> it = arrayList.iterator();
-//		System.out.println(arrayList);
+		//Iterator<String> it = arrayList.iterator();
+		
+		//while(iterator.hasNext()){
+		//System.out.println(arrayList.next()));
 		
 	}
 

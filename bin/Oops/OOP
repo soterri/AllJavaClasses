@@ -1,0 +1,31 @@
+features/attributes
+actions
+
+ex: 
+car features/attributes: wheels, tires, windows, color, model, make, year, doors
+action: drive, start, accelerate, stop, reverse
+
+Class is a template to build objects. Inside the class we define features and behaviors of the object.
+By using the class template/blueprint we can build objects and as many as we need/want.
+
+Class is a LOGICAL entity whereas OBJECT is a PHYSICAL entity.
+
+a class contains methods, constructors, variables
+
+Class can have attributes and behaviors. In programming to define
+attributes we use variables and to represent behavior we will be using 
+methods.
+
+If we don't have a class than we cannot create an object
+
+Variables and methods defined inside the class are class members	
+
+We have class that serves as a template then based on the template 
+we can create objects and through objects we can access variables and methods 
+of that class. In programming, behaviors will be represented in the form of methods
+and for attributes in the form of variables. We can define as many actions as we need.
+in order for us to create an obj first we have to have a class to create that obj
+thru the variable that is referring to the obj now we can access features/behaviors
+of the obj. 
+
+to access variables create obj of class

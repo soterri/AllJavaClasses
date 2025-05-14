@@ -33,6 +33,7 @@ public class TestScrum {
 		dev.artifacts="Spring backlog";
 		dev.ceremonies="Sprint demo, planning, retro, daily standup";
 		dev.employeeId=101;
+		//dev.employeeSsn -> not accessible bc it's private
 		
 	}
 }

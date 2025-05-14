@@ -13,6 +13,7 @@ public class RecapOfMethods1 {
 			System.out.println("Hello");
 		}
 	}
+	//create a method to say something a # of times
 	void saySomething(String word, int times) {
 		
 		for(int j=0; j<times; j++) {

@@ -1,0 +1,91 @@
+
+//Car - ClassName
+//car1 - object reference variable
+// = - assigning operator
+//new - keyword used to create an object
+//Car() - constructor must have name same as class name
+//; - end of statement
+
+Constructor: special method/block of code that is executed when we create 
+an object/an instance of the class.
+
+Constructor name is ALWAYS the same as class name.
+if you do not provide a constructor, the compiler by default will create a non argument constructor 
+
+NON-argument constructor
+Argument/parameterized constructor
+
+How to create a CONSTRUCTOR:
+1. constructor name must be the same as class name
+2. cannot have a return type, not even void
+
+How a constructor is executed:
+Every time when we create an object we call a constructor
+and entire block of code inside the constructor will be executed first
+
+WHY do we need a constructor?
+Constructor initializes object
+initialize instance variables
+
+
+
+This KW:
+used to refer to the current class instance/object
+using THIS kw we can refer/access current class instance members/variables/methods
+
+this.variableName -> refers to the instance variables.
+
+If we have local variables and instance variables with the same name
+THIS is used to differentiate b/w the local and instance variables.
+
+Difference between Constructor and Methods
+1. Constructor must have the same name as class, while method can have any name
+2. Constructor must not have a return type not even void - using a return type will just make it a method
+While method can have any return type
+3. Constructors cannot use ant non access modifiers such as static, final, abstract while method can
+4.Constructors are called automatically when obj/instance of the class is being created while method must be called
+
+Similarities
+1. both are blocks of codes that define functionality within a class
+2. both are defined within a class and can operate on the data members of that class
+3. both can have parameters or not
+4. both can use access modifiers
+5. both can be overloaded
+
+
+ConstructorDemo() {
+		System.out.println("I'm a constructor");
+	}
+
+	ConstructorDemo(String str) {
+		System.out.println("I am a constructor with one parameter " + str);
+
+	}
+	ConstructorDemo(String str1, int num){
+		System.out.println("I am a constructor with 2 parameters "+str1+" & "+num);
+	}
+	ConstructorDemo(int num1, int num2){
+		System.out.println("The sum of these 2 numbers is "+(num1+num2));
+	}
+
+	public static void main(String[] args) {
+
+		ConstructorDemo obj = new ConstructorDemo();
+		System.out.println("Code after creating an object");
+		obj.hello();
+		obj.hello1();
+		
+		ConstructorDemo obj2 = new ConstructorDemo("Parametized Constructor");
+		
+		ConstructorDemo obj3 = new ConstructorDemo("Savannah", 1);
+		
+		ConstructorDemo obj4 = new ConstructorDemo(20, 30);
+
+	}
+
+	public void hello() {
+		System.out.println("Hello Class");
+		System.out.println("Hello Instructors");
+	}
+	void hello1() {
+		System.out.println("Hello Savannah! <3");

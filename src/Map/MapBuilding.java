@@ -1,6 +1,9 @@
 package Map;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class MapBuilding {
 
@@ -17,16 +20,33 @@ public class MapBuilding {
 		
 		int size = building.size();
 		System.out.println(size);
+		System.out.println(building);
 		
 		//replace 
+		System.out.println("REPLACE");
 		String replace=building.replace(4, "Tesla");
 		System.out.println(building);
 		
+		System.out.println("REMOVE");
 		building.remove(7);
 		System.out.println(building);
 		
+		System.out.println("------------");
 		System.out.println(building);
 		
+		Set<Entry<Integer, String>> ent = building.entrySet();
+		
+		System.out.println("-----------");
+		Iterator<Entry<Integer, String>> buildingIt = ent.iterator();
+		
+		while(buildingIt.hasNext()) {
+			
+			Entry<Integer, String> entry = buildingIt.next();
+			
+			String buildingEnt = entry.getKey()+ " "+ entry.getValue();
+			System.out.println(buildingEnt);
+					
+		}
 		
 	}
 }

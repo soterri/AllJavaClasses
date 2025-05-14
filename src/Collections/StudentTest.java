@@ -1,8 +1,8 @@
 package Collections;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Iterator;
+import java.util.List;
 public class StudentTest {
 
 	public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class StudentTest {
 		
 		//created our own class - students
 		//inside the students class we created our own instance variables, methods, constructors
+			//creating student type of object
 		List<Student> students = new ArrayList<>();
 		
 		//Creating student objects and storing it inside stu variable
@@ -46,3 +47,5 @@ public class StudentTest {
 		}
 	}
 }
+
+//240-941-7113 

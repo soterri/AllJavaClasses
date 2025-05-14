@@ -3,22 +3,30 @@ package com.syntax.class07;
 public class WhileLoopPractice {
 	public static void main(String[] args) {
 
-		int i = 1;
+		// how to print numbers from 1-20;
 
-		while (i <= 20) {
-			System.out.println(i);
-			i++;
+		int i = 1; // initialize the variables
+
+		while (i <= 20) { // test the condition
+			System.out.println(i); // code gets executed
+			i++; // increment
+
 		}
 		// print 10 to 30 in one line
 
 		int j = 10;
-
 		while (j <= 30) {
 			System.out.print(j + " ");
 			j++;
 		}
 
 		// print values 10-1
+//		int y = 10;
+//
+//		while (y >= 1) {
+//			System.out.println(y);
+//			y--;
+		System.out.println("----------------------------");
 		int y = 10;
 
 		while (y >= 1) {
@@ -33,6 +41,7 @@ public class WhileLoopPractice {
 		while (a >= 20) {
 			System.out.println(a);
 			a--;
+
 		}
 		// print even numbers from 1-20
 		System.out.println("Even numbers");
@@ -41,6 +50,7 @@ public class WhileLoopPractice {
 		while (s <= 20) {
 			System.out.println(s);
 			s += 2;
+
 		}
 		System.out.println("Using Modulus");
 
@@ -52,8 +62,18 @@ public class WhileLoopPractice {
 				System.out.println(q);
 			}
 			q++;
-
 		}
+
+//		int q = 1;
+//		
+//		while(q<=20) {
+//			
+//			if(q%2==0) {
+//				System.out.println(q);
+//			}
+//			q++;
+//			
+//		}
 	}
 
 }

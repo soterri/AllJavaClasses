@@ -1,6 +1,7 @@
 Variables and methods defined inside the user class are class members
 
-Methods:
+Methods: describes the behavior of the class, a block of code
+
 Built In: limited and we cannot modify
 
 User Defined: unlimited and modifiable
@@ -11,4 +12,13 @@ Methods:
 With PARAMETERS
 W/O parameters
 
+
+Method WITH parameters
+void methodName (String str){ 
+		Sysout("Hello"+ str);
  
+ When we call method we have to pass matching argument of the method
+ and also we must follow the order of the defined parameters
+ 
+ Method without any return value uses VOID keyword
+ Method WITH return values uses RETURN keyword

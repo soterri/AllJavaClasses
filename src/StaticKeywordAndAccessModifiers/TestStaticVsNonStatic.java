@@ -4,8 +4,8 @@ public class TestStaticVsNonStatic {
 
 	public static void main(String[] args) {
 		
-		/*how to access static members
-		 * can be accessed by class name where theyre defined
+		/*how to access static members?
+		 * can be accessed by class name where they're defined
 		 */
 		System.out.println(StaticVsNonStatic.school);
 		StaticVsNonStatic.getInfo1();
@@ -18,7 +18,7 @@ public class TestStaticVsNonStatic {
 		obj.name="Terri";
 		obj.grade='A';
 		obj.getInfo();
-		obj.getInfo1();
+		obj.getInfo1();//possible not preferable
 		
 	}
 }

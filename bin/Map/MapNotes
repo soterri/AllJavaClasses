@@ -1,29 +1,34 @@
-Map - a collection of ENTRY objects using a key+value pair that is not apart of the Collection Framework although the concepts are based on the 
+Map - a collection of ENTRY objects using a key+value pair makes an entry object and map is not apart of the Collection Framework although the concepts are based on the 
 collections framework. Map has its own methods to manipulate data with.
 
-Classes that implement the Map interface is
-HashMap - map in which order is not maintained
+Why do we  need Map?
+when we want to store 2 objects and it will be stored in a key + value pair entry.
 
-LinkedHashMap -  of key objects is maintained
+Classes that implement the Map interface: 
+HashMap - stores k,v objects, map in which order is not maintained, allowed to have 1 null key and multiple null values
 
-TreeMap - map in which key objects will be stored in ascending order
+LinkedHashMap -  stores k,v objects, ordered collection, no duplicates, allowed to have 1 null key and multiple null values
 
-HashTable - synchronized and outdated.
+TreeMap - map in which key objects will be stored in ascending order, no null keys allowed, but can have multiple null values
 
-to store -- .PUT
+HashTable - synchronized and out dated. does not preserve the order, can not have null keys or null values
+
+to store -- .PUT(K, V)
 
 to retrieve -- .GET
 
 To retrieve all keys 
-.keySet(); - returns a set of all keys from the map(keys must be unique)
+.keySet(); - returns a collection/set of all keys from the map(keys must be unique)
 
 To retrieve all values
 .values(); returns a collection of values (values can be duplicate and they are not ordered).
 
-
+entrySet(); -> a collection of entry objects
 to get an entry object  - we need to call the method entrySet(); --> a set of entry objects
 
 entry will have methods
 .getKey - returns key object
 .getValue - returns value object
+
+CANNOT have duplicate KEYS! Keys must always be unique
 

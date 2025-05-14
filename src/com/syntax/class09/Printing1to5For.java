@@ -7,6 +7,7 @@ public class Printing1to5For {
 
 			for (int b = 1; b <= a; b++) { // cols
 				System.out.print(b);
+
 			}
 			System.out.println();
 		}

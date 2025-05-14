@@ -1,0 +1,82 @@
+the super keyword in Java serves several important purposes in the context of inheritance. 
+It provides a way for a subclass to interact with and use members (constructors, methods, and fields) 
+of its superclass.
+
+1. Accessing Superclass Members
+The super keyword is used to refer to members (methods or variables) of the immediate parent class.
+
+Why?
+When a subclass has members with the same name as those in the parent class,
+super resolves ambiguity by explicitly referring to the parent class's member.
+
+2. Invoking Superclass Methods
+super can be used to invoke methods of the parent class that are overridden in the subclass.
+
+Why?
+It allows the subclass to still call the superclass's version of a method, even when the subclass overrides it.
+
+3. Calling Superclass Constructors
+super can be used to call the constructor of the parent class. This must be the first statement in the subclass's constructor.
+
+Why?
+It allows the subclass to initialize the parent class before performing its own initialization.
+It ensures proper setup of inherited fields or behaviors.
+
+4. Avoiding Redundant Code
+By using super, you avoid duplicating the code in the parent class that is already designed to initialize or perform certain actions.
+
+5. Rules for super
+super() must always be the first statement in a constructor if it is used.
+If a subclass constructor does not explicitly call a parent class constructor using super(), the Java compiler automatically 
+inserts a call to the default constructor of the parent class.
+
+When to Use super?
+Access parent class variables: When the subclass has a variable with the same name as the parent class.
+Invoke parent class methods: When you want to use a method from the parent class that has been overridden.
+Initialize parent class fields: When a subclass constructor needs to ensure the proper initialization of the parent class.
+
+Key Takeaways
+super ensures proper communication and interaction between a subclass and its superclass.
+It helps prevent ambiguity and allows the subclass to build on the existing functionality of the parent class.
+
+Using super we can call an immediate Super/Parent class constructor
+
+Every time we create an object of a child class -> constructor of a parent class is getting executed.
+
+How is it getting called?
+with the help of the SUPER keyword
+
+Compiler adds below code if you do not create your own constructor
+
+String str;
+
+public class Parent{
+
+String str;
+	Parent(){
+	super();
+}
+
+if you create one Constructor, then compiler will not create one for you
+Parent(String str){
+this.str=str;
+
+public class Child extends Parent{
+Child(String str){
+super(str);
+}
+}
+
+super -> always must be first line inside a constructor
+
+Can super and this be in one constructor? yes
+this() -> calls current class constructor
+super() -> calls immediate parent class constructor
+
+super. with variables and methods
+super.variableName -> refers to the parent class variable (if parent class and child class have same variable name and you want to differentiate/access)
+super.methodName -> calls to the parent class method
+
+
+THIS.variables - > refers to the current class variable and to differentiate between local and instance variables with the same name
+THIS.methodName -> refers/to call to the current class methods

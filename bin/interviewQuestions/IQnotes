@@ -1,0 +1,27 @@
+Inside Strings class we have many methods that can be performed on strings
+
+1. To find the numbers of characters inside the string
+.length();
+
+2. case conversion methods
+toLowerCase();
+toUpperCase();
+
+3.check existence of other character sequence
+contains();
+startsWith();
+endsWiths();
+
+4. to get character at specific position use charAt();
+
+
+to verify if a string is empty
+String str = "";
+boolean isEmpty = str.isEmpty();
+Sysout(isEmpty); will return boolean value -> true in this case
+
+
+To manipulate String we have different classes
+String class
+StringBuffer class
+StringBuilder class

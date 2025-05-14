@@ -3,12 +3,17 @@ Set Collection:
 Set Collection does not allow for duplicate elements.
 
 Classes that implement the Set interface is:
-HsshSet - order of the elements is not preserved
+HashSet - order of the elements is not preserved
 LinkedHashSet - order is preserved
-TreeSet - ascending order (Abc order)
+TreeSet - ascending order (A,B,C order), does not allow for null values
 
 Set does not have methods to retrieve elements from. 
 so we retrieve elements using ITERATOR!
+
+Set<String> set = new Set<>(); NO
+cannot create an object of interface
+
+
 
 
 

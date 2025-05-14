@@ -6,3 +6,17 @@ value
 int i = 19;
 declaring the variable - assigning the value
 
+RELATIONAL OPERATOR
+greater than>, <less than, =, !=;
+
+Conditional Statements
+1. If conditions
+2. Switch case
+
+
+--- finding whether number is positive ---
+int num = 23;
+
+if(num>0){
+	Sysout(num+" is a + #);
+

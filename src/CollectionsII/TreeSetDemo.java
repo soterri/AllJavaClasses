@@ -13,7 +13,7 @@ public class TreeSetDemo {
 		fruitSet.add("bananas");
 		fruitSet.add("Apple");
 		fruitSet.add("kiwi");
-		fruitSet.add("mango");
+		fruitSet.add("apple");
 
 		System.out.println(fruitSet.size());
 		System.out.println(fruitSet);

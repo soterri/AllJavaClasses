@@ -1,0 +1,45 @@
+Interface Notes:
+a collection of public abstract methods
+and is the collection of public static final variables
+by default compiler will add public abstract
+Using interface, we achieve full abstraction
+when we dont know any of the implementation details go for interface
+
+Can only have unimplemented methods
+
+public interface anyName{
+//public abstract
+void method1();
+
+//public static final
+String str = "Sat";
+}
+
+Achieve full abstraction
+Achieve multiple inheritance (1 child multiple parents)
+can only have 1 class but multiple interfaces
+
+
+interfaces can only have unimplemented methods 
+but java 8+ can have static and default methods
+
+Abstract Class VS Interface
+1. We can implement multiple interfaces but we can exten only 1 class.
+2. To create a relationship to the interface we use IMPLEMENTS keyword
+while for classes we use EXTENDS
+3. Interface can not have constructors while abstract can
+4. Interface does not have instance variables by default every variables
+is STATIC FINAL and it MUST BE INITIALIZED while in Abstract class we can have both
+static and instance variables and we do not need to initialize them
+5.Inside interface abstract methods can only be public
+while abstract have any access modifier except private bc it does not participate
+in inheritance, can not override
+6.Interface - we can have only abstract methods, but since java 8+ we can have default
+and static implemented methods, while no restrictions in abstract class (defined and undefined)
+
+COMMON FEATURES:
+Both have to participate in inheritance
+both can not create objects 
+both used to achieve abstraction
+can have implemented and unimplemented methods only if java 8+
+

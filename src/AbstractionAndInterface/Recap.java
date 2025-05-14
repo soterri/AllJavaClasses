@@ -10,11 +10,12 @@ public class Recap {
 		// to store multiple values
 		int[] array = { 10, 20, 30 };
 
-		int[] arr = new int[2];
+		int[] arr = new int[3];
 		arr[0] = 100;
 		arr[1] = 200;
+		arr[2]=300;
 
-		System.out.println(arr[1]);
+		System.out.println(arr[2]);
 
 		// to retrieve 1 by 1
 		// using enhanced loop

@@ -25,14 +25,14 @@ public class Veggies {
 		System.out.println(hset);
 		
 		//set does not have methods to retrieve elements from collection
-		
+		//.get .set only belongs to list interface
 		//how can we retrieve all values? ITERATOR
 		
 		Iterator<String> it = hset.iterator();
 		
 		while(it.hasNext()) {
-			
-			System.out.println(it.next());
+			String element = it.next();
+			System.out.println(element);
 		}
 		System.out.println("*****************");
 		//enhanced for loop

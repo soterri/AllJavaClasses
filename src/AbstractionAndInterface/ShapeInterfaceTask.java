@@ -1,7 +1,5 @@
 package AbstractionAndInterface;
 
-import java.awt.Shape;
-
 public interface ShapeInterfaceTask {
 
 	/*

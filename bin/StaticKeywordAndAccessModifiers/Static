@@ -4,6 +4,16 @@ Static is a keyword that can be used with variables, methods, and blocks
 
 non static members cannot be used with static methods
 
+STATIC
+- static variables defined inside the class but outside any method, constructor, or block.
+- cannot be local
+- create a single copy of static variable and share among all instances of the class
+- belongs to the class rather than the instance
+- when you want to have common properties that should be passed onto all the instances that are static
+- can be used with variables, methods, and blocks
+
+
+
 4 types of access modifiers
 private
 default
@@ -12,7 +22,9 @@ public - making variables and methods accessible from anywhere throughout the en
 
 
 syntax for variables
-dataType variableName;
+optional 				//optional  					//must    //must
+ access modifier 		non-access mod static        dataType variableName;
 
 Syntax for methods
-returnType methodName
+optional 				//optional  					//must    //must
+ access modifier 		non-access mod static          returnType  methodName

@@ -16,6 +16,11 @@ public class ClassTask {
 		System.out.println("What month were you born in?");
 		month = scan.nextLine();
 		
+		//String month;
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("What month were you born in?");
+//		month = scan.nextLine();
+		
 		String season = null;
 
 		if (month.equals("January") || month.equals("February")) {

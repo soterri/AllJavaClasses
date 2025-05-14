@@ -52,7 +52,7 @@ public class Task {
 			System.out.println("not palindrome");
 		}
 	}
-
+	//create a method that will take a number and prints whether the number is even or odd
 	void evenOrOddd(int number) {
 		if (number % 2 == 0) {
 			System.out.println("The number " + number + " is even");

@@ -1,3 +1,4 @@
+
 package com.syntax.class04;
 
 public class RecapOfIf {
@@ -17,20 +18,35 @@ public class RecapOfIf {
 		} else {
 			System.out.println(num + " is a - number");
 		}
-
-		int i = 137;
-
-		if (i % 2 == 0) {
-			System.out.println(i + " is a even number");
-		} else {
-			System.out.println(i + " is a negative number");
+		
+		//even or odd
+		int i = 135; 
+		
+		if(i%2==0) {
+			System.out.println(i+" is an even number");
+		}else {
+			System.out.println(i+ " is an odd number");
 		}
-
-		if (i % 2 != 0) {
-			System.out.println(i + " is a odd number");
-		} else {
-			System.out.println(i + " is a even number");
+		
+		if(i%2!=0) {
+			System.out.println(i+ " is an odd number");
+		}else {
+			System.out.println(i+" is an even number");
 		}
 	}
 
 }
+
+//int i = 137;
+//
+//if (i % 2 == 0) {
+//	System.out.println(i + " is a even number");
+//} else {
+//	System.out.println(i + " is a negative number");
+//}
+//
+//if (i % 2 != 0) {
+//	System.out.println(i + " is a odd number");
+//} else {
+//	System.out.println(i + " is a even number");
+//}

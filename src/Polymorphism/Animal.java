@@ -2,7 +2,7 @@ package Polymorphism;
 
 public class Animal {
 
-	public void sleep() {
+	public void sleep() { //as a parent class, have common behaviors for sub classes
 		System.out.println("Animal can sleep");
 	}
 
@@ -12,7 +12,7 @@ public class Animal {
 
 }
 
-class Cat extends Animal {
+class Cat extends Animal { //cat class is a child class of animal
 		
 	@Override
 	public void sleep() {
@@ -24,3 +24,4 @@ class Cat extends Animal {
 	}
 	
 }
+

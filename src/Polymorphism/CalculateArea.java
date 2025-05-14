@@ -16,8 +16,8 @@ public class CalculateArea {
 	public static void main(String[] args) {
 		
 		CalculateArea area = new CalculateArea();
+		area.area(10,20);
 		area.area(10);
-		area.area(10, 20);
 		area.area(10, 15, 20);
 	}
 }

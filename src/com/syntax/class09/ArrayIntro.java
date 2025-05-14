@@ -12,30 +12,35 @@ public class ArrayIntro {
 		
 		b= new int[4];//initializing array store 4 elements 
 		
-		int[] array = new int[4]; //declaration and initialization
+		int[] array = new int[5]; //declaration and initialization
 		array[0]=10;
 		array[1]=20;
 		array[2]=30;
 		array[3]=40;
-		System.out.println(array[1]);
+		array[4]=50;
+		System.out.println(array[4]);
 		
-		String[] classes = new String[4];
+		//array that stores Strings
+		String[] classes = new String[5];
 		classes[0]="Java";
 		classes[1]="SDLC";
 		classes[2]="GIT";
 		classes[3]="Manual Testing";
+		classes[4]="SQL";
 		System.out.println("I am learning "+classes[0]);
 		
 		//changing elements
-		int[] nums = new int[3];
+		int[] nums = new int[4];
 		nums[0]=10;
 		nums[1]=100;
 		nums[0]=1000;
+		nums[0]=2000;
 		System.out.println(nums[0]);
+		System.out.println(nums[0]+nums[1]);
 		
 		//creating an array of strings
 		String[] names = new String[6];
-		names[0]="John";
+		names[0]="Cameron";
 		names[1]="Terri";
 		names[2]="Ange";
 		names[3]="Max";

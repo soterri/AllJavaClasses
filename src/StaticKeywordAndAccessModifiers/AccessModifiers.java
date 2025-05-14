@@ -3,6 +3,9 @@ package StaticKeywordAndAccessModifiers;
 public class AccessModifiers {
 
 	public static String language="Khmer";
+	public String name = "terri";
+			
+	
 	public static void hello() {
 		System.out.println("hello");
 

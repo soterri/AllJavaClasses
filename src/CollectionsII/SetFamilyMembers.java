@@ -20,10 +20,12 @@ public class SetFamilyMembers {
 		System.out.println(fruitSet.size());
 		// System.out.println(fruitSet);
 
+		System.out.println("iterator");
 		Iterator<String> it = fruitSet.iterator();
 		while (it.hasNext()) {
 
 			System.out.println(it.next());
+		}
 			
 			//adding collection into a collection
 		List<String> list = new ArrayList<>();
@@ -40,4 +42,4 @@ public class SetFamilyMembers {
 		}
 	}
 
-}
+

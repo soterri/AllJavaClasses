@@ -1,0 +1,77 @@
+once this exception occurs the rest of exception wont be completed
+us as programmer want to continue the execution of program we will have handle exception
+in the back, any time exception occurs there's is an object of exception type created and this object is being thrown to program
+once its thrown you need to catch it or pass it on to something else
+
+Parent of all EXCEPTIONS is the throwable class.
+
+We have 2 types of throwable objects/classes:
+
+Error: Something that we can not handle (out of memory exception will occur bc lack of system resource)
+
+Exception: an object that is thrown at runtime and this object is something we can handle.
+unwanted, unexpected even that occurs/disrupts the program/application
+Exception is an object that is being thrown at the program we can handle.
+We can TRY to CATCH it problematically
+
+2 types of Exception:
+
+CHECKED - compile time exception - occurs during compilation and you will have to handle it otherwise
+your code will not compile
+
+UNCHECKED - type of exception that is not checked by the compiler (ArithmeticException, ArrayIndexOutOfBoundaryException)
+
+To handle any exception we can try to use TRY and CATCH block
+
+TRY block: a block of code that will consist of any code that might throw an exception
+a problematic code that will give you an exception 
+
+CATCH block will need to catch the object of the thrown exception
+inside catch block we must provide corresponding exception type
+using catch block we have to provide the matching exception object: ex: ArithmeticException 
+the exception is being caught in the object e and provide friendly user message and code gets to continue
+
+Inside throwable class we can use 3 methods to call and provide a message of exception:
+
+.printStackTrace(); -> details of where in the code exception occurs. Name of the exception and message
+
+SOPln(exception object) -> name of the exception and message ex: sysout(e);
+
+.getMessage() -> message of the exception 
+
+We can have multiple catch blocks associated with the try block.
+During runtime - only 1 corresponding catch block will get executed
+When we create multiple catch blocks we should specify order of catch block from specific to general
+
+
+KEYWORDS:
+
+FINALLY -  block of code that will execute - a block that will associated with try block and will execute no matter what
+will execute whether exception occurs or not
+usually we put "clean up" inside finally block 
+finally block will not handle any exception - only catch block catches the actual exception
+
+We can have multiple catch blocks associated with 1 TRY, but can
+have only 1 finally block per try block 
+
+Real Life Example:
+Establish Database Connection
+
+try{
+
+	retrieve data
+}catch(SQLException e){
+	e.getMessage();
+}finally{
+	close dataBase connection;
+
+
+THROWS - kw that delegates responsibility to handle the exception to the caller/method that calls
+associated with checked exception 
+
+Compiler will give two options when checked exception occurs
+1. use try and catch - handle exception
+2. throws - do not handle it now and pass it to whoever calls that method
+ 
+
+THROW - a kw that is used to throw an actual exception, always goes inside the method body
