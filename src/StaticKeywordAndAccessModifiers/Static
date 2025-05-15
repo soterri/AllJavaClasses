@@ -11,7 +11,9 @@ STATIC
 - belongs to the class rather than the instance
 - when you want to have common properties that should be passed onto all the instances that are static
 - can be used with variables, methods, and blocks
+- if value of static variable is changed in one of the instances - all instances will be affected
 
+instance members of the class can access all static members
 
 
 4 types of access modifiers

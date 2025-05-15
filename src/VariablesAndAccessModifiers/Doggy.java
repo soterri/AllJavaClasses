@@ -33,7 +33,7 @@ public class Doggy {
 		
 		Doggy pup3 = new Doggy();
 		pup3.name = "Chanthavong";
-		pup3.color="yello";
+		pup3.color="yellow";
 		pup3.breed="Doberman";
 		pup3.display();
 		pup2.display(); //changes the breed to doberman bc line 37
