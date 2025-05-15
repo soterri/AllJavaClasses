@@ -3,7 +3,7 @@
 //car1 - object reference variable
 // = - assigning operator
 //new - keyword used to create an object
-//Car() - constructor must have name same as class name
+//Car() - constructor call / constructor must have name same as class name
 //; - end of statement
 
 Constructor: special method/block of code that is executed when we create 
@@ -27,6 +27,8 @@ WHY do we need a constructor?
 Constructor initializes object
 initialize instance variables
 
+Create a parametized constructor to initialize the instance variables
+make = carMake; 
 
 
 This KW:

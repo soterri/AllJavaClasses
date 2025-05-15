@@ -18,6 +18,9 @@ public class BetterCar {
 		make="BMW";
 		BetterCar bcar1=new BetterCar("i5", "Black", 100, 4);
 		bcar1.getDetails();
+		BetterCar bcar2 = new BetterCar("x5", "Blue", 200, 4);
+		bcar2.getDetails();
+		
 	}
 
 	public void getDetails() {
