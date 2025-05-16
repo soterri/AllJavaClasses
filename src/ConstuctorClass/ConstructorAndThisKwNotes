@@ -30,16 +30,6 @@ initialize instance variables
 Create a parametized constructor to initialize the instance variables
 make = carMake; 
 
-
-This KW:
-used to refer to the current class instance/object
-using THIS kw we can refer/access current class instance members/variables/methods
-
-this.variableName -> refers to the instance variables.
-
-If we have local variables and instance variables with the same name
-THIS is used to differentiate b/w the local and instance variables.
-
 Difference between Constructor and Methods
 1. Constructor must have the same name as class, while method can have any name
 2. Constructor must not have a return type not even void - using a return type will just make it a method
@@ -91,3 +81,18 @@ ConstructorDemo() {
 	}
 	void hello1() {
 		System.out.println("Hello Savannah! <3");
+		
+		
+		
+		
+This KW:
+used to refer to the current class instance/object
+using THIS kw we can refer/access current class instance members/variables/methods
+
+this.variableName -> refers to the instance variables and used to differentiate b/w instance and local variables with the same name
+this.WithMETHODS -> used to call instance method within the same class
+
+If we have local variables and instance variables with the same name
+THIS is used to differentiate b/w the local and instance variables.
+
+this() - refers to the current class constructor and achieves constructor chaining
