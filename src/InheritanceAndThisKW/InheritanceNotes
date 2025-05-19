@@ -1,9 +1,25 @@
-Inheritance 
+Inheritance: the mechanism of a child class acquiring all of the properties
+of the parent class.
+ mechanism in which object gets access to all attributes/behaviors from another class
+process when child class/sub class/derived class inherits all properties and behaviors of the
+super/base class.
+
+Why do we need it? to eliminate code redundancy
+how? by using extends kw 
+
+What type of Inheritance?
 single - 1 parent 1 child
 
 multilevel - grandparent - parent - child
 
 hierarchial- 1 parent multiple children 
+
+Multiple inheritance achieved only through interface
+it's when child class has more then one parent
+not supported through java classes
+
+Who is the parent of all Java classes? OBJECT class
+
 
 Private variables and methods are not inherited so they will not be available or visible in the subclasses
 
