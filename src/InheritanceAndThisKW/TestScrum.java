@@ -23,6 +23,7 @@ public class TestScrum {
 		st.ceremonies="Sprint Demo, Planning, Retro, Daily Standup";
 		st.attendScrumMeetings();
 		
+		
 		System.out.println("---Developer---");
 		Developer dev = new Developer();
 		dev.salary=1300000;
@@ -33,7 +34,16 @@ public class TestScrum {
 		dev.artifacts="Spring backlog";
 		dev.ceremonies="Sprint demo, planning, retro, daily standup";
 		dev.employeeId=101;
+		dev.attendScrumMeetings();
 		//dev.employeeSsn -> not accessible bc it's private
+		
+		BizAnalyst biz = new BizAnalyst();
+		biz.gatherInfo();
+		biz.artifacts="Product backlog";
+		biz.ceremonies="daily stand up";
+		biz.attendScrumMeetings();
+		biz.work();
+		
 		
 	}
 }

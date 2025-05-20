@@ -19,7 +19,7 @@ It allows the subclass to still call the superclass's version of a method, even 
 super can be used to call the constructor of the parent class. This must be the first statement in the subclass's constructor.
 
 Why?
-It allows the subclass to initialize the parent class before performing its own initialization.
+It allows the subclass to initialize the parent class object before performing its own initialization.
 It ensures proper setup of inherited fields or behaviors.
 
 4. Avoiding Redundant Code

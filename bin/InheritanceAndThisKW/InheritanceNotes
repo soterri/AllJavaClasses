@@ -18,7 +18,8 @@ Multiple inheritance achieved only through interface
 it's when child class has more then one parent
 not supported through java classes
 
-Who is the parent of all Java classes? OBJECT class
+Who is the parent of all Java classes? 
+OBJECT class
 
 
 Private variables and methods are not inherited so they will not be available or visible in the subclasses
