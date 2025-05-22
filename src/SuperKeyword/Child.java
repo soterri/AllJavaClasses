@@ -8,6 +8,7 @@ public class Child extends Parent {
 		Child obj = new Child();
 		//obj.callName();
 		obj.callingMethod();
+		obj.hello();
 	}
 
 
@@ -19,6 +20,11 @@ public class Child extends Parent {
 	public void callingMethod(){
 		callName();//by default this is added. calls current class
 		super.callName();
+	}
+	public void hello() {
+		this.callingMethod();//implicitly compiler adds this
+		super.hello();//implicitly compiler adds super
+		
 	}
 	
 }
