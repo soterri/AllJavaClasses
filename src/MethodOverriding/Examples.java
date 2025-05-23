@@ -1,6 +1,6 @@
 package MethodOverriding;
 
-import Polymorphism.MethodOverLoading;
+import PolymorphismOLandOR.MethodOverLoading;
 
 public class Examples {
 
