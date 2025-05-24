@@ -6,7 +6,9 @@ public class Car {
 	int year;
 
 	// Constructor
-	Car() {
+	Car(String make, String model) {
+		this.make=make;
+		this.model=model;
 		System.out.println("Car constructor");
 	}
 
@@ -17,22 +19,33 @@ public class Car {
 
 	public static void main(String[] args) {
 
-		Car car = new Car();
-		car.make = "Acura";
-		car.model = "TSX";
+		Car car = new Car("BMW", "X5");
+		//car.make = "Acura";
+		//car.model = "TSX";
 		car.year = 2023;
 		car.display();
 
-		Tesla tesla = new Tesla();
-		
+		Tesla tesla = new Tesla("?", "?");
+
 	}
 
 }
-class Tesla extends Car{
-	
+
+class Tesla extends Car {
+
 	boolean autoPilot;
-	
-	Tesla(){
+
+	Tesla(String make, String model) {
+		super(make, model);
 		System.out.println("Non argument child class constructor");
 	}
+}
+
+class Mercedes extends Car {
+
+	Mercedes(String make, String model){
+		super(make, model);
+	}
+	
+	
 }

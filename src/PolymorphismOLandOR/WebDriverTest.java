@@ -7,15 +7,19 @@ public class WebDriverTest {
 		chrome.open();
 		chrome.refresh();
 		
+		System.out.println("---------------------");
 		FireFoxDriver firefox = new FireFoxDriver();
 		firefox.refresh();
 		firefox.open();
 		firefox.getTitle();
 		
+		System.out.println("============");
 		WebDriver driver = new ChromeDriver();
 		driver.open();
 		driver.refresh();
 		driver.open();
+		
+		System.out.println("****************");
 		//creating a object of child class and given reference to the parent class
 		WebDriver driver1 = new FireFoxDriver();
 		driver1.open();
