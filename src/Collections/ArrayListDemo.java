@@ -20,7 +20,7 @@ public class ArrayListDemo {
 		arrayList.add("Ange");
 
 		// how many elements inside arrayList?
-		int size=arrayList.size();
+		int size = arrayList.size();
 		System.out.println(size);
 
 		// creating an object of arraylist that will hold numeric values
@@ -32,11 +32,12 @@ public class ArrayListDemo {
 		System.out.println(numArrList.get(2));
 
 		// retrieving values
-			//int num = control or counter variable -> controls # of iterations
+		// int num = control or counter variable -> controls # of iterations
 		for (int num = 0; num < numArrList.size(); num++) {
 			System.out.println(numArrList.get(num));
 		}
 
+		System.out.println("BACKWARDS");
 		// backwards
 
 		for (int i = numArrList.size() - 1; i >= 0; i--) {
@@ -44,30 +45,32 @@ public class ArrayListDemo {
 
 		}
 
-		System.out.println(numArrList.get(1));
+		System.out.println(numArrList.get(2));
+
+		System.out.println("--for loop--");
 
 		for (Integer num : numArrList) {
 			System.out.println(num);
 
 		}
-		for(String ent:arrayList) {
-		System.out.println(ent);
-		
-	
+
+		for (String ent : arrayList) {
+			System.out.println(ent);
+
 		}
+		System.out.println();
 		System.out.println("---------------");
-		for(int i=0; i<arrayList.size(); i++) {
+
+		for (int i = 0; i < arrayList.size(); i++) {
 			System.out.println(arrayList.get(i));
 		}
-		//arrayList can have generic and non generic
+		// arrayList can have generic and non generic
 		ArrayList aList = new ArrayList();
 		aList.add("Hello");
 		aList.add(1250);
 		aList.add(10.10);
 		aList.add(true);
 		System.out.println(aList);
-		
-		
 
-}
+	}
 }

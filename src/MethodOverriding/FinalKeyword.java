@@ -22,3 +22,13 @@ class FinalKeywordChild extends FinalKeyword{
 		//System.out.println("final method in child class cannot be overridden");
 	//}
 }
+
+/*final keyword = non access modifier that identifies the variable, method, class is completed
+ * and cannot be further modified
+ *
+ * final can be used with 
+ * 1. variables -> constant values, final variables must be initialized
+ * 2. methods -> final methods can't be overridden, but can be overloaded
+ * 3. classes -> final classes can't have subclasses
+ */
+ 

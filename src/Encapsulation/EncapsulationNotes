@@ -1,6 +1,8 @@
 Encapsulation:
 In Java, a mechanism for wrapping the data(variables) and code acting
-on the data(methods) together as a single unit.
+on the data(methods) together as a single unit. The variables of a class will be
+hidden from other classes and can be accessed only through the methods of their current
+class.
 
 create private variables and only through public method you can access these private variables
 
@@ -12,5 +14,12 @@ To create a tightly encapsulated class we need:
 How can we achieve data hiding?
 by making the data private, to access the data, we have to use
 public methods, and through public methods, you can get access to variables
+
+To achieve ENCAPSULATION:
+1. make fields/variables private
+2. make public getters and setters to access those variables
+
+Why do we need it?
+for security purposes, protecting data.
 
  
