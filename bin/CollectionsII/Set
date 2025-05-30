@@ -13,6 +13,20 @@ so we retrieve elements using ITERATOR!
 Set<String> set = new Set<>(); NO
 cannot create an object of interface
 
+List vs Set?
+List is an ordered collection that allows for duplicate elements/objects
+while set does not allow for duplicates and depends on which set you're using
+that will store elements in order, in ascending order, or at random
+
+How to remove duplicate elements from List? -> convert to set
+
+How to retrieve single element from Set? -> convert to list
+
+arrays is a utility class that has methods to work with arrays
+Arrays.sort(array)
+
+Collections is a util class that have methods to work with collections
+Collection.sort(list)
 
 
 

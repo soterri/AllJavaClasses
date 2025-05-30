@@ -15,6 +15,8 @@ public class InstructorList {
 		iList.add(new Instructor("Asel", "Umur"));
 		iList.add(new Instructor("Diego", "Juarez"));
 		iList.add(new Instructor("Weqas", "Hass"));
+		iList.add(new Instructor("Terri", "Thach"));
+		
 		
 		for(Instructor i:iList) {
 			i.display();

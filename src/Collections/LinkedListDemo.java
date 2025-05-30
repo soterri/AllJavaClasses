@@ -12,15 +12,17 @@ public class LinkedListDemo {
 		linkedList.add("Hello");
 		linkedList.add("Bye");
 		linkedList.add(2, "How are you");//replaces the element in that index
+		linkedList.add(0, "hellooo");
 		
 		System.out.println(linkedList.size());
-		
+		System.out.println("-------------");
 		for(int j=0; j<linkedList.size(); j++) {
 			System.out.println(linkedList.get(j));
 		}
 		
 		System.out.println(linkedList.get(1));
 		
+		System.out.println("***********************");
 		//update/replace
 		linkedList.set(0, "hi");
 		
@@ -28,7 +30,9 @@ public class LinkedListDemo {
 		
 		for(int i=0; i<linkedList.size(); i++) {
 			System.out.println(linkedList.get(i));
+		
 		}
+		System.out.println("==============");
 		for(String lList:linkedList) {
 			System.out.println(lList);
 		}

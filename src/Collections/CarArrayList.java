@@ -5,8 +5,10 @@ import java.util.Iterator;
 
 public class CarArrayList {
 	public static void main(String[] args) {
-		
-		/*Create an arraylist of cars and retrieve all the values using 3 different ways
+
+		/*
+		 * Create an arraylist of cars and retrieve all the values using 3 different
+		 * ways
 		 */
 		
 		ArrayList<String> cars = new ArrayList<>();
@@ -28,7 +30,7 @@ public class CarArrayList {
 			System.out.println(cars.get(j));
 		}
 		System.out.println("Iterator");
-		java.util.Iterator<String> iterator = cars.iterator();
+		Iterator<String> iterator = cars.iterator();
 
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
@@ -40,8 +42,3 @@ public class CarArrayList {
 		
 	}
 }
-
-
-
-
-

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ArrayListDemo {
 	public static void main(String[] args) {
 
+		//generic arraylist
 		ArrayList<String> arrayList = new ArrayList<String>();
 		// to store values inside collection - add.
 		arrayList.add("Terri");
@@ -64,13 +65,18 @@ public class ArrayListDemo {
 		for (int i = 0; i < arrayList.size(); i++) {
 			System.out.println(arrayList.get(i));
 		}
-		// arrayList can have generic and non generic
+		//non generic collection that store collection object
 		ArrayList aList = new ArrayList();
-		aList.add("Hello");
+		aList.add("Hello");//store single object
 		aList.add(1250);
 		aList.add(10.10);
 		aList.add(true);
 		System.out.println(aList);
+		
+		System.out.println("-----------");
+		for(Object a:aList) {
+			System.out.println(a);
+		}
 
 	}
 }

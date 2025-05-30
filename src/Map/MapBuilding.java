@@ -32,7 +32,24 @@ public class MapBuilding {
 		System.out.println(building);
 		
 		System.out.println("------------");
-		System.out.println(building);
+		//System.out.println(building);
+		
+		//how to get all keys
+		System.out.println("Get all keys - return one set of keys");
+		Set<Integer> keys = building.keySet();
+		System.out.println(keys);
+		System.out.println("------****----------");
+		
+		Iterator<Integer> keysIt = keys.iterator();
+		while(keysIt.hasNext()) {
+			int key=keysIt.next();
+			System.out.println("Key is "+key+" and its value is "+building.get(key));
+		}
+		
+		System.out.println("---getting keys using for each loop----");
+		for(int k:keys) {
+			System.out.println("Key from building map" +k+" and its value is "+building.get(k));
+		}
 		
 		Set<Entry<Integer, String>> ent = building.entrySet();
 		

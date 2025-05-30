@@ -5,10 +5,10 @@ import java.util.HashMap;
 public class MapIntro {
 
 	public static void main(String[] args) {
-
+		//to store values - use method put 
 		HashMap<Integer, String> ppl = new HashMap<>();
 		ppl.put(101, "Sotheary");
-		ppl.put(101, "Cameronn");
+		ppl.put(101, "Cameron");
 		ppl.put(102, "Terri");
 		ppl.put(103, "Sophy");
 		ppl.put(104, "Max");

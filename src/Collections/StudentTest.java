@@ -19,11 +19,14 @@ public class StudentTest {
 		Student stu = new Student("Terri", 101);
 		Student stu1 = new Student("John",102);
 		Student stu2 = new Student("Savannah", 103);
+		Student stu3 = new Student("Cameron", 104);
+		//students.add(new Student("Terri", 105));
 		
 		//display info of each student
 		students.add(stu);
 		students.add(stu1);
 		students.add(stu2);
+		students.add(stu3);
 		
 		//stu1.displayInfo();
 		//stu2.displayInfo();
@@ -36,6 +39,7 @@ public class StudentTest {
 		students.add(new Student("Sophy", 104));
 		students.add(new Student("Max", 105));
 		students.add(new Student("Ange",106));
+		
 		
 		System.out.println("------------------");
 		//display info of each student

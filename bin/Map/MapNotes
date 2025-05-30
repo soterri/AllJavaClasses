@@ -1,10 +1,12 @@
-Map - a collection of ENTRY objects using a key+value pair makes an entry object and map is not apart of the Collection Framework although the concepts are based on the 
+Map -an interface, a collection of ENTRY objects using a key+value pair makes an entry object and map is not apart of the Collection Framework although the concepts are based on the 
 collections framework. Map has its own methods to manipulate data with.
+
+Map is a collection of entry objects. k + v pair.
 
 Why do we  need Map?
 when we want to store 2 objects and it will be stored in a key + value pair entry.
 
-Classes that implement the Map interface: 
+Classes that implement the Map interface: 4 implementation classes:
 HashMap - stores k,v objects, map in which order is not maintained, allowed to have 1 null key and multiple null values
 
 LinkedHashMap -  stores k,v objects, ordered collection, no duplicates, allowed to have 1 null key and multiple null values
