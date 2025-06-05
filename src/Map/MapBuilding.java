@@ -1,5 +1,6 @@
 package Map;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -48,8 +49,26 @@ public class MapBuilding {
 		
 		System.out.println("---getting keys using for each loop----");
 		for(int k:keys) {
-			System.out.println("Key from building map" +k+" and its value is "+building.get(k));
+			System.out.println("Key from building map " +k+" and its value is "+building.get(k));
 		}
+		//how to get all values
+		System.out.println("VALUES");
+		Collection<String> values = building.values(); //the building is out "map
+		//use for loop bc internally for loop is working based off iterator, logic is like iterator
+		for(String v:values) {
+			System.out.println(v);
+		}
+		System.out.println("****Iterator****");
+		//map will not methods related to COLLECTIONS, to retrieve values, we will use methods value(), call method and get one obj and it will store all values 
+		//which is collction<String> values bc it holds all our values if we want to use with iterator
+		Iterator<String>vals = values.iterator();
+		while(vals.hasNext()) {
+			String valz=vals.next();
+			System.out.println(valz);
+		}
+		
+		
+		
 		
 		Set<Entry<Integer, String>> ent = building.entrySet();
 		
