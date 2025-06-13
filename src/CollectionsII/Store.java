@@ -1,6 +1,7 @@
 package CollectionsII;
 
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -102,6 +103,14 @@ class UserDefinedClassesInMap {
 			Store obj = storeMap.get(k);
 			obj.display();
 			obj.workingHours();
+		}
+		Iterator<Entry<Integer, Store>> it = storeSet.iterator();
+		while(it.hasNext()) {
+			
+			Entry<Integer, Store> ent = it.next();
+			Integer keyss= ent.getKey();
+			
+			
 		}
 
 	}

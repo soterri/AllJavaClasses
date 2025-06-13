@@ -26,9 +26,13 @@ public class CarTest {
 
 		// display only VALUE objects - use values();
 		Collection<Car> coll = mapCar.values();
-
-		for (Car c : coll) {
+		
+		for(Car c:coll) {
 			c.display();
+			
+			
+			
+			
 		}
 		System.out.println(mapCar.size());
 
@@ -52,6 +56,7 @@ public class CarTest {
 			// itCar is the variable that refers to the object Car type
 
 		}
+
 
 		// using KEYSET to map keys to values
 		System.out.println("Using keyset");

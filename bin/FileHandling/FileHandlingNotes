@@ -1,0 +1,50 @@
+To handle files in Java(import/export data or read and write files) we can use 2 classes:
+FileInputStream to import data
+FileOutputStream to export data
+
+Using these classes we can read any type of files:
+.txt files, .properties files, .xlsx files
+
+Properties  file -is a file that has .properties extension 
+and its stores data in form of key and value.
+Serving as a configuration file, there we can place data that 
+we will need to config our test execution. 
+What kind of data?
+to store our app url, database url, credentials to login apps, credentials to login databases
+
+Why do we need it?
+Property file mostly use to store configurations settings
+to store browser, url, username, password, database url, database userName, database passWord.
+
+To read/work with data from properties file:
+We need properties class, bc properties class gives us many methods to work with 
+
+extensions:
+.txt
+.xls
+.xlsx - new version
+
+first, a file, 2nd build obj of the file input stream, now depending on the different type of file,
+we will be using different type of class, if using excel files will be using xssf workbook 
+
+to read excel - use apache poi library
+inside library collection of interfaces and classes
+
+1. interface -> workbook and will have 2 implementation classes
+xssfworkbook class - new workbook and HSSFWorkbook class
+
+
+driver.get(read url from propfile);
+driver.findElement(By.id("whatever string id that will be passed)).sendKeys("Admin12345");
+
+
+Why do we need it?
+
+to separate code from data, we will using configs for our apps to test
+changing values in the configs without changing in source code
+
+
+to test login
+driver.findElement(By.id("").sendKeyd("user id from excel");
+driver.findElement(By.id("").sendKeys("password from excel");
+performing data driven testing - data will be driving my test
