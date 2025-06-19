@@ -1,7 +1,8 @@
-once this exception occurs the rest of exception wont be completed
-us as programmer want to continue the execution of program we will have handle exception
-in the back, any time exception occurs there's is an object of exception type created and this object is being thrown to program
-once its thrown you need to catch it or pass it on to something else
+once an exception occurs the rest of execution wont be completed
+us as programmers, want to continue the execution of program we will have handle exception
+in the back, any time exception occurs there's is an object of exception type created and this 
+object is being thrown to program once its thrown you need to catch it or pass 
+it on to something else
 
 Parent of all EXCEPTIONS is the throwable class.
 
@@ -30,6 +31,7 @@ CATCH block will need to catch the object of the thrown exception
 inside catch block we must provide corresponding exception type
 using catch block we have to provide the matching exception object: ex: ArithmeticException 
 the exception is being caught in the object e and provide friendly user message and code gets to continue
+can have multiple catch blocks
 
 Inside throwable class we can use 3 methods to call and provide a message of exception:
 

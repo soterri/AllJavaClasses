@@ -2,6 +2,7 @@ package FileHandling;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Properties;
 import java.util.Set;
 
@@ -36,6 +37,10 @@ public class PropertiesFileReading {
 		String city = prop.getProperty("city");
 		System.out.println(city);
 
+		Collection<Object> vals = prop.values();
+		for (Object v : vals) {
+			System.out.println(v);
+		}
 		Set<Object> key = prop.keySet();
 		for (Object k : key) {
 			System.out.println(k);

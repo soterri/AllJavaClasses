@@ -17,7 +17,7 @@ public class LoginToFaceBook {
 	
 	public static void main(String[] args) throws IOException {
 
-		String filePath = System.getProperty("user.dir") + "\\configurations.properties";
+		String filePath = "C:\\Users\\JohnN\\eclipse-workspace\\SeleniumTest\\configs\\configurations.properties";
 				//"\\configs\\configurations.properties";// always defines
 																									// location where
 																									// java starts

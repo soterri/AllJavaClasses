@@ -8,12 +8,26 @@ Using these classes we can read any type of files:
 Properties  file -is a file that has .properties extension 
 and its stores data in form of key and value.
 Serving as a configuration file, there we can place data that 
-we will need to config our test execution. 
+we will need to configure our test execution. 
+
+In Java, Properties is a class used to read and write 
+key-value pairs from special text files called .properties files.
+Think of .properties files as simple configuration files.
+It stores settings, like login credentials, file paths, URLs, etc.
+
 What kind of data?
 to store our app url, database url, credentials to login apps, credentials to login databases
 
+What properties class do?
+Action	                      Java Method
+Load from file	              load(InputStream)
+Get a value	                  getProperty("key")
+Set a value	                  setProperty("key", "value")
+Save back to file	          store(OutputStream, comment)
+
+
 Why do we need it?
-Property file mostly use to store configurations settings
+Property file mostly used to store configurations settings
 to store browser, url, username, password, database url, database userName, database passWord.
 
 To read/work with data from properties file:
@@ -24,24 +38,62 @@ extensions:
 .xls
 .xlsx - new version
 
-first, a file, 2nd build obj of the file input stream, now depending on the different type of file,
+1st, have a file, 2nd build obj of the file input stream, now depending on the different type of file,
 we will be using different type of class, if using excel files will be using xssf workbook 
 
 to read excel - use apache poi library
 inside library collection of interfaces and classes
 
-1. interface -> workbook and will have 2 implementation classes
-xssfworkbook class - new workbook and HSSFWorkbook class
+to store test data and to work with excel file we use 
+APACHE POI
 
+1. interface -> WORKBOOK and will have 2 implementation classes
+XSSFWorkbook class - new workbook  - .xlsx
+HSSFWorkbook class - old workbook for 97-03 .xls
 
 driver.get(read url from propfile);
 driver.findElement(By.id("whatever string id that will be passed)).sendKeys("Admin12345");
 
 
 Why do we need it?
-
+To store configuration data or test data anytime we need to make a change
+we can do it w/o modifying change to the source code.
 to separate code from data, we will using configs for our apps to test
 changing values in the configs without changing in source code
+
+Sheet sheet = book.getSheet();
+
+HOW TO HANDLE DATA FROM EXCEL FILE?
+
+1. Specify/locate path to the file
+
+2. Create an object of FileInputStream , creating a connection b/w 
+java code and our file using FIS transferring data to our program
+
+3. Get an object of Workbook type (XSSFWorkbook)class to handle newest version of excel
+
+4. Get a specified "Sheet". How to access sheet? 
+through obj type of workbook, getting sheet, access by name or index
+
+
+HOW TO STORE EXCEL DATA INTO JAVA DATASTRUCTURE?
+
+1. Get number of rows and cells (using sheet we can # of physical rows
+. from each row we can get number of cells)
+- Create an empty object of List <Map<K,V>
+2. Using nested for loop, will iterate over rows and cols 
+- Outer loop iterates over rows:
+	-Create an object of Map<K,V>;
+	
+	-Using inner loop iterate over columns
+		*store/put key and a value into map
+		
+Before going to the next row, we store map into the List
+	
+
+
+
+
 
 
 to test login

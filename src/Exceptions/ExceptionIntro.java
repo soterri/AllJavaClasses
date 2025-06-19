@@ -13,8 +13,11 @@ public class ExceptionIntro {
 			System.out.println("CODE AFTER AN EXCEPTION");
 		}
 		
-		
 		System.out.println("Continues code");
+
+//		
+//		NullPointerException npe = new NullPointerException();
+//		throw(npe);
 		
 		//int[] array = {10,20,30};
 		//System.out.println(array[3]);

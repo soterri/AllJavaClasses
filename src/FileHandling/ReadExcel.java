@@ -40,3 +40,11 @@ public class ReadExcel {
 
 	}
 }
+
+//we are looking to read files, in order for us to work with files
+//we bring in apache poi library, inside library we have set of interfaces and 
+//classes that will help us read and extract data from excel 
+//so first we must have a filepath, then bring obj of FIS and 
+//then we will work with excel specific classes, sowe will build obj of workbooktype, from wbook type we excess shet and can caluclate rows and cols
+//we use nested loop to loop over rows and to loop over cols
+//from sheet, we access getrow and getcol and convert to string
