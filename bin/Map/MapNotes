@@ -1,4 +1,5 @@
-Map -an interface, a collection of ENTRY objects using a key+value pair makes an entry object and map is not apart of the Collection Framework although the concepts are based on the 
+Map -an interface, a collection of ENTRY objects using a key+value pair makes an entry object and map is not 
+apart of the Collection Framework although the concepts are based on the 
 collections framework. Map has its own methods to manipulate data with.
 
 Map is a collection of entry objects. k + v pair.

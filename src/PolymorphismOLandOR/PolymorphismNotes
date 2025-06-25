@@ -1,7 +1,8 @@
 2 types of polymorphism
 
 compile time/static binding/early binding/->method overloading
-during compilation, you will know how object will behave whether it will perform based on your methods with parameters
+during compilation, you will know how the object will behave whether it will perform based on your methods with parameters
+
 example: you have 2 methods with the same name with different parameters and you create an obj calling those methods
 and 1 method has 2 parameters -> void sum(int a, int b) when you call the method, the method with 2 arguments, you will have to 
 provide those arguments based on the amount of parameters
@@ -14,7 +15,7 @@ it's called compile time polymorphism.
 method overloading is when you have 2 or more methods in the same class with the same exact name but with different 
 numbers or types of parameters
 
-overloading is achieved by passing different number parameters or types or parameters
+overloading is achieved by passing different number of parameters or types or parameters
 
 operator overloading (+)
 with strings -> behaves as concatenation operator
@@ -25,12 +26,15 @@ void - return type
 add(int num1, String str) - method + parameters = method signature
 in method overloading method signature must always be different
 
+18006382972
+6 ext
 
+301-459-3020 sheriv admin?
 
 Runtime time/dynamic binding/late binding/method overriding
 
 
-public access modifier
+public - access modifier
 void - return type
 add(int num1, int num2) - method + parameters = method signature
 in method overriding method signature and return type must always be same!

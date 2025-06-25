@@ -36,8 +36,11 @@ and a class has their own constructors that are made by the compiler by default
 
 compile time/static binding/early binding/->method overloading
 during compilation, you will know how obj will behave whether it will perform based on your methods with parameters
+
 example: you have 2 methods with the same name with different parameters and you create an obj calling those methods
+
 and 1 method has 2 parameters -> void sum(int a, int b) when you call the method the method with 2 arguments.
+
 void sum(int a, int b, int c) --> class summ = new class(5,10,15); when calling a specific method you'll know which behavior which will be executed.
 
 method overloading is when you have 2 or more methods in the same class with the same exact name but with different numbers or types of parameters

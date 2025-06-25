@@ -74,7 +74,8 @@ this() -> calls current class constructor
 super() -> calls immediate parent class constructor
 
 super. with variables and methods
-super.variableName -> refers to the parent class variable (if parent class and child class have same variable name and you want to differentiate/access)
+super.variableName -> refers to the parent class variable (if parent class and child class have same variable 
+name and you want to differentiate/access)
 super.methodName -> calls to the parent class method
 
 

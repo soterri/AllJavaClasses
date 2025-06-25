@@ -16,7 +16,7 @@ public class ExcelToMap {
 	public static void main(String[] args) throws IOException {
 
 		//File Path Definition - this defines the path to my excel file on my local machine
-		//the dbl backslashesare used to escape the backslash character in java string
+		//the dbl backslashes are used to escape the backslash character in java string
 		String filePath = "C:\\Users\\JohnN\\eclipse-workspace\\JavaClasses\\testdata\\Book1.xlsx";
 
 	    //creating the object of FIS which makes the connection

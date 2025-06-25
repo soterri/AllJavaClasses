@@ -32,7 +32,7 @@ List
 Set
 Queue
 
-LIST INTEFACE: collection that allows for duplicate elements and preserves the order of elements.
+LIST INTEFACE: an interface apart of the collection framework that allows for duplicate elements and preserves the order of elements.
 The classes that implement the LIST interface are:
 1. ArrayList
 2. LinkedList
@@ -42,7 +42,7 @@ The classes that implement the LIST interface are:
 WHY DO WE NEED COLLECTIONS
 to manipulate data
 Arrays are limited in size and do not have methods to manipulate data with.
-Arrays are a static data structure while arrayList are dynamic data structure.
+Arrays are a static data structure while arrayList is a dynamic data structure.
 
 Wrapper Classes: class that converts non primitive types into object types
 8 wrapper classes - wraps your primitive variable and now represented in the form of object
@@ -54,8 +54,8 @@ byte = Byte
 Why do we need Wrapper classes?
 to store converted primitive types inside our collections
 
-when we convert primitives to non primitives they become objects and you can find many different methods and properties
-
+when we convert primitives to non primitives they become objects and you can have access to many different methods
+and properties
 
 Iterator is an interface that helps iterate/traverse through collections (List, Set, Queue)
 through each element inside the collection.
@@ -67,7 +67,7 @@ next(); -> returns the next element
 
 remove(); -> removes the next element
 
-List: allows duplicates elements and maintains the insertion order
+List: an interface that is apart of the collection framework and allows duplicates elements and maintains the insertion order
 ArrayList
 LinkedList
 Vector
@@ -98,8 +98,8 @@ To find elements:
 3. length() - array
 size() - arrayList
 
-Iterator - an interface that helps iterate/traverse through collections(list, set, queue)/ through each element inside collections
-can only iterate in one direction 
+Iterator - an interface that helps iterate/traverse through collections(list, set, queue)/ through each element 
+inside collections can only iterate in one direction 
 
 Iterators have 3 methods
 hasNext(); -> returns boolean if  there is a next element in the collection

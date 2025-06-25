@@ -27,6 +27,19 @@ WHY do we need a constructor?
 Constructor initializes object
 initialize instance variables
 
+An instance variable is a variable that belongs to an object — 
+not the class itself. Each object you create gets its own copy of these variables.
+
+Constructors are used to initialize instance variables because:
+They set the initial state of an object
+They ensure that variables are not left uninitialized
+They make your code cleaner, safer, and more consistent
+
+Because when you create an object, you usually want to set up its initial state — 
+give its instance variables some values. That’s exactly what a constructor is for.
+
+Think of the constructor like the setup function that runs once, when an object is created.
+
 Create a parametized constructor to initialize the instance variables
 make = carMake; 
 
@@ -34,8 +47,8 @@ Difference between Constructor and Methods
 1. Constructor must have the same name as class, while method can have any name
 2. Constructor must not have a return type not even void - using a return type will just make it a method
 While method can have any return type
-3. Constructors cannot use ant non access modifiers such as static, final, abstract while method can
-4.Constructors are called automatically when obj/instance of the class is being created while method must be called
+3. Constructors cannot use non access modifiers such as static, final, abstract while method can
+4. Constructors are called automatically when obj/instance of the class is being created while method must be called
 
 Similarities
 1. both are blocks of codes that define functionality within a class
@@ -93,6 +106,6 @@ this.variableName -> refers to the instance variables and used to differentiate 
 this.WithMETHODS -> used to call instance method within the same class
 
 If we have local variables and instance variables with the same name
-THIS is used to differentiate b/w the local and instance variables.
+THIS is used to differentiate b/w local and instance variables.
 
 this() - refers to the current class constructor and achieves constructor chaining

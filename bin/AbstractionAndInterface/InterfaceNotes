@@ -24,11 +24,11 @@ interfaces can only have unimplemented methods
 but java 8+ can have static and default methods
 
 Abstract Class VS Interface
-1. We can implement multiple interfaces but we can exten only 1 class.
+1. We can implement multiple interfaces but we can extend only 1 class.
 2. To create a relationship to the interface we use IMPLEMENTS keyword
 while for classes we use EXTENDS
 3. Interface can not have constructors while abstract can
-4. Interface does not have instance variables by default every variables
+4. Interface does not have instance variables by default every variable
 is STATIC FINAL and it MUST BE INITIALIZED while in Abstract class we can have both
 static and instance variables and we do not need to initialize them
 5.Inside interface abstract methods can only be public

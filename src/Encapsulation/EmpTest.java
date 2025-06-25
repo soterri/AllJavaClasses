@@ -5,7 +5,10 @@ public class EmpTest {
 
 		Employee emp = new Employee();
 		emp.setName("Terri");
-		System.out.println(emp.getName());
+		emp.setAge(20);
+		emp.setSalary(220.000);
+		System.out.println(emp.getName()+" "+emp.getAge()+" "+emp.getSalary());
+		
 	}
 
 }
