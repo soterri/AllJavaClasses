@@ -33,6 +33,13 @@ using catch block we have to provide the matching exception object: ex: Arithmet
 the exception is being caught in the object e and provide friendly user message and code gets to continue
 can have multiple catch blocks
 
+new NullPointerException();
+new ArithmeticException();
+new InterruptedException():
+
+Once we caught the exception we can specify details of an exception in 3 different ways:
+printstacktrace, sop(E), .getMessage
+
 Inside throwable class we can use 3 methods to call and provide a message of exception:
 
 .printStackTrace(); -> details of where in the code exception occurs. Name of the exception and message
