@@ -72,6 +72,16 @@ java code and our file using FIS transferring data to our program
 
 3. Get an object of Workbook type (XSSFWorkbook)class to handle newest version of excel
 
+Utils package
+
+a method to initialize and open browser -> Base Class
+method to read and extract properties -> ConfigsReader
+path to prop file, XLfile, drivers, reports -> Constants
+
+in the future:
+to handle excel -> Excel
+to perform any action on the browser -> common functions
+
 4. Get a specified "Sheet". How to access sheet? 
 through obj type of workbook, getting sheet, access by name or index
 

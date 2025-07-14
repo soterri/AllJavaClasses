@@ -63,6 +63,18 @@ finally block will not handle any exception - only catch block catches the actua
 We can have multiple catch blocks associated with 1 TRY, but can
 have only 1 finally block per try block 
 
+IQ:
+finally{} vs final vs finalize()
+FINALLY is a block that is associated with try block and will always gets executed where exception occurs or not
+and final is a KEYWORD, a non access modifier that is associated with class, method, or variable
+meaning no longer modifiable
+
+finalize() -is a method associated with garbage collection process
+This method is executed before Objects gets destroyed from a heap memory
+
+HEAP - MEMORY WILL HOLD OBJECTS
+STACK - MEMORY WILL HOLD REFERENCE VARIABLES
+
 Real Life Example:
 Establish Database Connection
 
