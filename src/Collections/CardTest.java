@@ -22,7 +22,9 @@ public class CardTest {
 //			it.next().cashBack();
 //			it.next().creditLimit();
 			
-			Card cc = it.next();//stepped into next element, grabbed thast element an stored it inside variable, using the variable that refers to the objects, we have access to calling the methods cashBack, then goes into next element 
+			Card cc = it.next();//stepped into next element, grabbed that element and stored it inside variable, 
+			//using the variable that refers to the objects, we have access to calling the methods cashBack, 
+			//then goes into next element 
 			cc.cashBack();
 			cc.creditLimit();
 		}
