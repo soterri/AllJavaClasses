@@ -1,4 +1,8 @@
-2 types of polymorphism
+What is polymorphism?
+Polymorphism in Java is one of the four fundamental principles of Object-Oriented Programming (OOP) 
+(along with inheritance, encapsulation, and abstraction).
+
+2 types of polymorphism:
 
 compile time/static binding/early binding/->method overloading
 during compilation, you will know how the object will behave whether it will perform based on your methods with parameters
@@ -15,7 +19,7 @@ it's called compile time polymorphism.
 method overloading is when you have 2 or more methods in the same class with the same exact name but with different 
 numbers or types of parameters
 
-overloading is achieved by passing different number of parameters or types or parameters
+overloading is achieved by passing different number of parameters or types of parameters
 
 operator overloading (+)
 with strings -> behaves as concatenation operator
@@ -26,13 +30,8 @@ void - return type
 add(int num1, String str) - method + parameters = method signature
 in method overloading method signature must always be different
 
-18006382972
-6 ext
-
-301-459-3020 sheriv admin?
 
 Runtime time/dynamic binding/late binding/method overriding
-
 
 public - access modifier
 void - return type
@@ -50,7 +49,7 @@ Without inheritance method overriding is not possible.
 
 Rules for Method Overriding 
 1. Inheritance is a must
-2. Method signatures and return type must be the same
+2. Method signature and return type must be the same
 
 When to go for method overriding?
 When we want to implement our own methods/behaviors. 
@@ -72,7 +71,7 @@ Non Primitives -> String
 runtime polymorphism, when creating an object of the child class and giving 
 reference to parent class and then accessing the method
 during compilation, COMPILER looks at parent/reference type class and checks 
-if method is available in parent in class and during runtime jvm will check, jvm executes the code
+if method is available in parent class and during runtime jvm will check, jvm executes the code
 during the runtime, jvm will go to child class first and then sees that method available
 creating an obj of child and check if method is available within child class, thats what it will execute.
 		

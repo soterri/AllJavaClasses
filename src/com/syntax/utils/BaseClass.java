@@ -1,6 +1,5 @@
 package com.syntax.utils;
 
-import javax.management.RuntimeErrorException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +9,7 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 
-	public void setUp() {
+	public static void setUp() {
 
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
 		

@@ -13,7 +13,7 @@ Constructor name is ALWAYS the same as class name.
 if you do not provide a constructor, the compiler by default will create a non argument constructor 
 
 NON-argument constructor
-Argument/parameterized constructor
+Argument/parameterized constructor passed in paranthesis
 
 How to create a CONSTRUCTOR:
 1. constructor name must be the same as class name
@@ -46,7 +46,7 @@ make = carMake;
 Difference between Constructor and Methods
 1. Constructor must have the same name as class, while method can have any name
 2. Constructor must not have a return type not even void - using a return type will just make it a method
-While method can have any return type
+while method can have any return type
 3. Constructors cannot use non access modifiers such as static, final, abstract while method can
 4. Constructors are called automatically when obj/instance of the class is being created while method must be called
 

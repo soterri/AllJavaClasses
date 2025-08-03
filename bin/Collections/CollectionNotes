@@ -44,7 +44,7 @@ to manipulate data
 Arrays are limited in size and do not have methods to manipulate data with.
 Arrays are a static data structure while arrayList is a dynamic data structure.
 
-Wrapper Classes: class that converts non primitive types into object types
+Wrapper Classes: class that converts primitive data types into object types
 8 wrapper classes - wraps your primitive variable and now represented in the form of object
 int = Integer
 char = Character
@@ -80,10 +80,10 @@ Arraylist is a dynamic array
 LinkedList uses a doubly linked list, while ArrayList uses array
 
 2.
-ArrayList is the best option for retrieving 
+ArrayList is the best option for retrieving elements
 
 while LinkedList is best choice
-for adding and removing operations
+for adding and removing elements
 
 
 ArrayList vs Array
@@ -98,14 +98,62 @@ To find elements:
 3. length() - array
 size() - arrayList
 
-Iterator - an interface that helps iterate/traverse through collections(list, set, queue)/ through each element 
-inside collections can only iterate in one direction 
+🧱 Structure of a LinkedList:
+A LinkedList is made up of nodes.
 
-Iterators have 3 methods
-hasNext(); -> returns boolean if  there is a next element in the collection
+Each node contains:
 
-next(); -> returns the next element
+The data
 
-remove(); -> removes that next element
+A reference (or pointer) to the next node (and in DoublyLinkedList, also the previous node)
 
+🔍 Why It’s Good for Adding/Removing:
+✅ 1. No Shifting Required (like in Arrays):
+In an ArrayList, adding/removing in the middle means shifting elements to maintain order.
 
+e.g. Removing index 2 in an ArrayList of 100 items → 97 items get shifted!
+
+In a LinkedList, you just:
+
+Update a few pointers (like .next and .prev)
+
+No need to shift any other elements
+
+✅ 2. Constant Time Operations at Ends:
+Adding/removing at the head (start) or tail (end) of a LinkedList takes:
+
+O(1) time (just re-point a reference)
+
+In contrast, ArrayList removals/additions at the front require shifting every single element.
+
+✅ 3. Efficient Insertions/Deletions in Middle:
+If you already have a reference to the node:
+
+Insert/delete = just change .next and .prev
+
+Time = O(1)
+
+With an ArrayList, inserting in the middle = shift right
+
+Deleting = shift left
+
+⚠️ But Not Always Best...
+Operation	ArrayList	LinkedList
+Access (get)	✅ O(1)	❌ O(n)
+Add at end	✅ O(1)*	✅ O(1)
+Add/remove front	❌ O(n)	✅ O(1)
+Add/remove mid	❌ O(n)	✅ O(n)*
+
+* ArrayList add at end is amortized O(1), unless it resizes.
+* LinkedList add/remove in middle requires O(n) to find the node, unless you already have it.
+
+🔚 Summary
+LinkedList is best for:
+
+Adding/removing elements at start, end, or known positions.
+
+Situations where insert/delete operations happen frequently.
+
+But not best when:
+
+You need to access elements by index often (use ArrayList for that — much faster).
